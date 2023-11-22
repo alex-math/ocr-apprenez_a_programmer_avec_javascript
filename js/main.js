@@ -1,5 +1,3 @@
-let listeMots = ["Cachalot", "Pétunia", "Serviette"]
-let listePhrases = ["Pas de panique !", "La vie, l'univers et le reste", "Merci pour le poisson"]
 let score =0
 let saisieUtilisateur = prompt("Voulez-vous saisir un MOT ou une PHRASE ?")
 let choixListeUtilisateur
