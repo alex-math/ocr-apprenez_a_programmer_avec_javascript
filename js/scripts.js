@@ -1,3 +1,13 @@
+/*********************************************************************************
+ *
+ * Ce fichier contient toutes les fonctions nécessaires au fonctionnement du jeu.
+ *
+ *********************************************************************************/
+
+/**
+ *
+ * @returns {string}
+ */
 function choisirPhrasesOuMots() {
   let saisieUtilisateur = prompt("Voulez-vous saisir un MOT ou une PHRASE ?")
   while(saisieUtilisateur !== "MOT" && saisieUtilisateur !== "PHRASE") {
@@ -24,6 +34,8 @@ function afficherResultat(score, nombreTotalDeProposition) {
 }
 
 function lancerJeu() {
+          let baliseZonePropositionSpan = document.querySelector('#zoneProposition span');
+  console.log(baliseZonePropositionSpan);
   let saisieUtilisateur = choisirPhrasesOuMots()
   let nombreTotalDeProposition = 0
   let score = 0
