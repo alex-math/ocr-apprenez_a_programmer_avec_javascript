@@ -9,7 +9,7 @@
 - créer un formulaire de saisie de données.
 
 ## Pour aller plus loin
-Je souhaite permettre aux utilisateurs de tester leur vitesse de frappe au clavier, comme peut le proposer le site <a href="https://www.ratatype.fr/typing-test/" target="_blank">ratatype.fr</a></br>
+Je souhaite permettre aux utilisateurs de tester leur vitesse de frappe au clavier, comme peut le proposer le site <a href="https://www.ratatype.fr/typing-test/" target="_blank">ratatype.fr</a>.</br>
 L'utilisateur devra sélectionner un temps (30 sec / 1 min / 2 min) puis taper le maximum de mot durant ce temps.
 
 A l'issu du temps imparti, on bascule sur un nouvel écran : le leaderboard.</br>
@@ -27,5 +27,6 @@ Lorsque la lettre saisie ne correspond pas, aucune lettre n'est ajoutée à la z
 Lorsque la lettre saisie correspond, la lettre est colorée en vert
 
 ### Leaderboard
-En bas de page, on pourra afficher un tableau récapitulatif des différents essais de l'utilisateur, classés par ordre croissant de mots saisis.</br>
+L'écran Leaderboard affichera un tableau récapitulatif des différents essais de l'utilisateur, classés par ordre croissant de mots saisis par minute.</br>
 Par la suite, le leaderboard pourra afficher la précision en % : proportion de lettre saisie correctement par rapport au nombre total de lettre saisie (incluant par conséquent le fautes de frappes).
+Il pourra également y avoir un bouton "tips"
