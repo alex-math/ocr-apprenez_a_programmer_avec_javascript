@@ -18,6 +18,21 @@ function afficherProposition(proposition) {
   zoneProposition.innerText = proposition
 }
 
+function validerNom(nom) {
+  if (nom.length >=2) {
+    return true
+  }
+  return false
+}
+
+function validerEmail (email) {
+  let emailRegExp = new RegExp("[a-z0-9._-]+@[a-z0-9._-]+\\.[a-z0-9._-]+")
+  if (emailRegExp.test(email)) {
+    return true
+  }
+  return false
+}
+
 /**
  * Cette fonction construit et affiche l'email.
  * @param {string} nom : nom du joueur
@@ -82,9 +97,14 @@ function lancerJeu() {
     let nom = document.getElementById("nom").value;
     let email = document.getElementById("email").value;
 
-    let scoreEmail = `${score} / ${index}`
+    if (validerNom(nom) && validerEmail(email)) {
+      let scoreEmail = `${score} / ${index}`
+      afficherEmail(nom, email, scoreEmail)
+    } else {
+      console.log("erreur")
+    }
 
-    afficherEmail(nom, email, scoreEmail)
+
   })
 
   afficherResultat(score, index)
